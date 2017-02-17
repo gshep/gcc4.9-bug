@@ -21,6 +21,7 @@ std::unique_ptr<std::thread> get_thread()
     {
         while (gSyncUsersThreadRun.load())
         {
+            //missing ')' but successfully compiles
             std::this_thread::sleep_for(std::chrono::seconds(1);
 
             try
